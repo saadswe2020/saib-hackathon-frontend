@@ -1,18 +1,35 @@
-import * as React from 'react';
+import React from 'react'
 import { Provider } from 'react-native-paper'
-
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 import { theme } from './src/core/theme'
-import LoginScreen  from './src/screens/LoginScreen';
+import {
+  LoginScreen,
+  SignUpScreen,
+  ResetPasswordScreen,
+  FeedScreen
+} from './src/screens'
 
-
-
+const Stack = createStackNavigator()
 
 export default function App() {
   return (
     <Provider theme={theme}>
-  
-          <LoginScreen></LoginScreen>
-    
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="FeedScreen"
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
+          
+          <Stack.Screen name="LoginScreen" component={LoginScreen} />
+          <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+          <Stack.Screen name="ResetPasswordScreen" component={ ResetPasswordScreen }/>
+          <Stack.Screen name="FeedScreen" component={ FeedScreen }/>
+
+        </Stack.Navigator>
+      </NavigationContainer>
     </Provider>
   )
 }

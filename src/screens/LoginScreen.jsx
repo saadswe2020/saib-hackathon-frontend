@@ -9,6 +9,9 @@ import TextInput from '../components/TextInput'
 import { theme } from '../core/theme'
 import { emailValidator } from '../helpers/emailValidator'
 import { passwordValidator } from '../helpers/passwordValidator'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState({ value: '', error: '' })
@@ -22,6 +25,10 @@ export default function LoginScreen({ navigation }) {
       setPassword({ ...password, error: passwordError })
       return
     }
+    const onSignUpPressed = () => {
+      
+        return
+      }
     navigation.reset({
       index: 0,
       routes: [{ name: 'Dashboard' }],
@@ -32,7 +39,7 @@ export default function LoginScreen({ navigation }) {
     <Background>
      
       <Logo />
-      <Header>Welcome back!</Header>
+      <Header>Everything begins with an idea!</Header>
       <TextInput
         label="Email"
         returnKeyType="next"
@@ -66,7 +73,7 @@ export default function LoginScreen({ navigation }) {
       </Button>
       <View style={styles.row}>
         <Text>Don’t have an account? </Text>
-        <TouchableOpacity onPress={() => navigation.replace('RegisterScreen')}>
+        <TouchableOpacity onPress={() => navigation.replace('SignUpScreen')}>
           <Text style={styles.link}>Sign up</Text>
         </TouchableOpacity>
       </View>

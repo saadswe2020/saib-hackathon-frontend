@@ -29,7 +29,7 @@ const Card = ({
 
   const MoreIcon = require('../assets/more.png');
   const review = ()=>{ 
-    navigator.navigate('ResetPasswordScreen')
+    navigator.navigate('ReviewScreen')
   };
 
   

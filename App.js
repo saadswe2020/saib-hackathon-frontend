@@ -7,7 +7,9 @@ import {
   LoginScreen,
   SignUpScreen,
   ResetPasswordScreen,
-  FeedScreen
+  IdeasFeedScreen,
+  ReviewScreen,
+  ViewComments
 } from './src/screens'
 
 const Stack = createStackNavigator()
@@ -17,7 +19,7 @@ export default function App() {
     <Provider theme={theme}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="FeedScreen"
+          initialRouteName="LoginScreen"
           screenOptions={{
             headerShown: false,
           }}
@@ -26,7 +28,13 @@ export default function App() {
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
           <Stack.Screen name="ResetPasswordScreen" component={ ResetPasswordScreen }/>
-          <Stack.Screen name="FeedScreen" component={ FeedScreen }/>
+          <Stack.Screen name="IdeasFeedScreen" component={ IdeasFeedScreen }/>
+          <Stack.Screen name="ReviewScreen" component={ ReviewScreen }/>
+          <Stack.Screen name="ViewComments" component={ ViewComments }/>
+
+          
+
+          
 
         </Stack.Navigator>
       </NavigationContainer>

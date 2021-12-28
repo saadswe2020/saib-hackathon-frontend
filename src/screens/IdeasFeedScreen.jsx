@@ -15,10 +15,10 @@ export default function IdeasFeedScreen({navigation}) {
         backgroundColor: 'white',
         marginTop: 30,
       }}
-      admin={true}
       >
       <Card
-    
+      admin={true}
+
       name={'Abdulrahman Ahmed'}
       type={'Workplace'}
       navigator={navigation}
@@ -38,7 +38,7 @@ export default function IdeasFeedScreen({navigation}) {
       noOfComments={3}
       
       onPressComments={() => {
-        Alert.alert('Do comments vote action');
+        navigation.navigate('ViewComments');
         
       }}
     />
@@ -60,7 +60,7 @@ export default function IdeasFeedScreen({navigation}) {
       }}
       noOfComments={6}
       onPressComments={() => {
-        Alert.alert('Do comments vote action');
+        navigation.navigate('ViewComments')
       }}
     />
       <Card
@@ -81,7 +81,7 @@ export default function IdeasFeedScreen({navigation}) {
       }}
       noOfComments={5}
       onPressComments={() => {
-        Alert.alert('Do comments vote action');
+        navigation.navigate('ViewComments')
       }}
     />
       <Card
@@ -102,7 +102,7 @@ export default function IdeasFeedScreen({navigation}) {
       }}
       noOfComments={2}
       onPressComments={() => {
-        Alert.alert('Do comments vote action');
+        navigation.navigate('ViewComments')
       }}
     />
 
@@ -125,7 +125,7 @@ export default function IdeasFeedScreen({navigation}) {
       }}
       noOfComments={3}
       onPressComments={() => {
-        Alert.alert('Do comments vote action');
+        navigation.navigate('ViewComments')
       }}
     />
           <Card
@@ -146,7 +146,7 @@ export default function IdeasFeedScreen({navigation}) {
       }}
       noOfComments={6}
       onPressComments={() => {
-        Alert.alert('Do comments vote action');
+        navigation.navigate('ViewComments')
       }}
     />
     </ScrollView>

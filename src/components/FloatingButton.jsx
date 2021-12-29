@@ -4,7 +4,9 @@ import {AntDesign, Entypo} from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import Button from "./Button";
 import { IconButton } from "react-native-paper";
-import { theme } from '../core/theme'
+import { theme } from '../core/theme';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 
@@ -15,7 +17,7 @@ export default function FloatingButton ({navigation}) {
 
     return (
         <View>
-           <TouchableOpacity onPress={onButtonPress}    
+           <TouchableOpacity
     style={{
       borderWidth: 1,
       borderColor: 'black',
@@ -32,7 +34,7 @@ export default function FloatingButton ({navigation}) {
       zIndex:1
     }}
   >
-        <Button >
+        <Button onPress={onButtonPress}>
         <Text style={{color: 'black', fontSize:24}}>
             +
             </Text>

@@ -7,6 +7,8 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import TextInput2 from '../components/TextInput2';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import chevron_up from './assets/chevron_up.png';
 
 

@@ -1,7 +1,14 @@
 import { Updates } from 'expo';
-import React, { Component } from 'react';
+import React from 'react';
+import Component from 'react';
 import Card from '../components/Card';
 import {TouchableOpacity, Text, View, Image,ScrollView} from 'react-native';
+import { useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import OptionsMenu from "react-native-option-menu";
+
 // import chevron_up from './assets/chevron_up.png';
 
 
@@ -10,6 +17,7 @@ import {TouchableOpacity, Text, View, Image,ScrollView} from 'react-native';
 export default function IdeasFeedScreen({navigation}) {
  
     return (
+      
       <ScrollView style={{
         marginVertical: 5,
         backgroundColor: 'white',

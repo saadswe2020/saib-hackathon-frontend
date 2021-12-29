@@ -2,6 +2,8 @@ import { Updates } from 'expo';
 import React from 'react';
 import {TouchableOpacity, Text, View} from 'react-native';
 import { useState } from 'react';
+import OptionsMenu from "react-native-option-menu";
+
 
 
 
@@ -22,8 +24,8 @@ const Comment = ({
 
 
   
-  const deletePost = ()=>{
-    console.log("Delete post")
+  const deleteComment = ()=>{
+    console.log("Delete comment")
   }
 
   
@@ -52,7 +54,14 @@ const Comment = ({
         <View>
           <Text style={{color: 'black'}}>{name}</Text>
           <Text style={{color: 'gray'}}>{timeElapsed}</Text>
+          <View style={{marginTop:15, marginBottom:10}}>
+          <Text style={{color: 'black'}}>
+          {body}
+        </Text>
         </View>
+        </View>
+        
+     
 
 
 
@@ -61,7 +70,7 @@ const Comment = ({
         buttonStyle={{ width: 10, height: 8, margin: 0.5, resizeMode: "contain"}}
         destructiveIndex={0}
         options={["Delete", "Cancel"]}
-        actions={[deletePost]}/>:<></>}
+        actions={[deleteComment]}/>:<></>}
       </View>
     
 

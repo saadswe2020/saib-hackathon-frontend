@@ -7,7 +7,7 @@ import OptionsMenu from "react-native-option-menu";
 
 
 
-// import chevron_up from './assets/chevron_up.png';
+
 const MoreIcon = require('../assets/more.png');
 
 
@@ -55,7 +55,7 @@ const Comment = ({
           <Text style={{color: 'black'}}>{name}</Text>
           <Text style={{color: 'gray'}}>{timeElapsed}</Text>
           <View style={{marginTop:15, marginBottom:10}}>
-          <Text style={{color: 'black'}}>
+          <Text style={{color: 'black', fontSize:14}}>
           {body}
         </Text>
         </View>

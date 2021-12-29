@@ -44,14 +44,14 @@ const CardExpanded = ({
 
 
       style={{
-        padding: 20,
+        padding: 15,
         marginVertical: 5,
         backgroundColor: 'white',
-        borderRadius: 20,
+        borderRadius: 0,
         borderWidth: 1,
         borderColor: '#ffe404',
         marginTop: 5,
-        marginHorizontal: 15
+        marginHorizontal: 0
       }}>
 
 
@@ -88,7 +88,7 @@ const CardExpanded = ({
       </View>
 
       <View style={{marginVertical: 20}}>
-        <Text style={{color: 'black'}}>
+        <Text style={{color: 'black', fontSize:15}}>
           {body}
         </Text>
       </View>

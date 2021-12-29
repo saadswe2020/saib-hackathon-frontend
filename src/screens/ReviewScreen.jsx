@@ -11,7 +11,7 @@ import Button from '../components/Button';
 
 
 
-export default function IdeasFeedScreen({navigation}) {
+export default function ReviewScreen({navigation}) {
     const onReviewPressed = () => {navigation.navigate('IdeasFeedScreen')}
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState(null);
@@ -41,12 +41,12 @@ export default function IdeasFeedScreen({navigation}) {
      admin={true}
 
       name={'Abdulrahman Ahmed'}
-      type={'Workplace'}
+      type={'Software'}
       navigator={navigation}
       timeElapsed={'3d ago'}
-      title={'My Idea'}
+      title={'Crowd funding app'}
       body={
-        'Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test '
+        'Raising capital for your next venture can be a major hurdle on the road to bringing your vision to life.  While bank loans and pitching investors are still viable fundraising options, crowdfunding gives you the opportunity to get support from a crowd: a group of individuals who collectively invest in your idea to make it a reality.'
       }
       noOfUpVotes={34}
       onPressUpVote={() => {
@@ -73,7 +73,9 @@ export default function IdeasFeedScreen({navigation}) {
       >
       
 
-      
+      <View style={{paddingBottom:10}}>
+
+     
 
 <DropDownPicker
       open={open}
@@ -82,6 +84,30 @@ export default function IdeasFeedScreen({navigation}) {
       setOpen={setOpen}
       setValue={setValue}
       setItems={setItems}
+      placeholder="Review Application"
+    />
+ </View>
+ <View style={{paddingBottom:10}}>
+
+<DropDownPicker
+      open={open}
+      value={value}
+      items={items}
+      setOpen={setOpen}
+      setValue={setValue}
+      setItems={setItems}
+      placeholder="Review Cost"
+    />
+     </View>
+
+<DropDownPicker
+      open={open}
+      value={value}
+      items={items}
+      setOpen={setOpen}
+      setValue={setValue}
+      setItems={setItems}
+      placeholder="Review Feasability"
     />
 
 

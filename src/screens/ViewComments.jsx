@@ -23,16 +23,17 @@ export default function ViewComments({navigation}) {
       admin={true}
 
       name={'Abdulrahman Ahmed'}
-      type={'Workplace'}
+      type={'Software'}
       navigator={navigation}
       timeElapsed={'3d ago'}
-      title={'My Idea'}
+      title={'Crowd funding app'}
       body={
-        'Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test '
+        'Raising capital for your next venture can be a major hurdle on the road to bringing your vision to life.  While bank loans and pitching investors are still viable fundraising options, crowdfunding gives you the opportunity to get support from a crowd: a group of individuals who collectively invest in your idea to make it a reality.'
       }
     />
    
 <Comment
+
       name={'Abdulaziz Alsaif'}
       body={
         'I like this idea very much, thank you for sharing it!'
@@ -42,25 +43,31 @@ export default function ViewComments({navigation}) {
 
     />
     <Comment
+          admin={true}
+
       name={'Abdullah Naif'}
       body={
         'Wow genius idea...'
       }
-      timeElapsed={'1d ago'}
+      timeElapsed={'2d ago'}
 
     />
 
 <Comment
+      admin={true}
+
       name={'Mohammed Alghamdi'}
       body={
-        'I think this idea can have many wonderful real-world applications, looking forward to seeing them implemented one day! Also, Ad laboris id culpa ipsum. Nulla amet consectetur ullamco sint ipsum labore duis. Minim laboris voluptate deserunt Lorem do excepteur labore tempor veniam cillum in laboris. Id ipsum nostrud cupidatat ullamco incididunt reprehenderit laboris est occaecat. Ullamco tempor elit aute qui aliqua consectetur laborum id dolor amet. Non cupidatat elit cupidatat culpa aute. Culpa est cupidatat anim deserunt nostrud minim irure est mollit adipisicing.'
+        'I think this idea can have many wonderful real-world applications, looking forward to seeing them implemented one day! Also, research your competitions before getting started!'
       }
       timeElapsed={'1d ago'}
     />
 
 
 <Comment
-      name={'Lorem Ipsum'}
+      admin={true}
+
+      name={'Faisal Alharthi'}
       body={
         'Sint magna mollit amet duis sit consequat nulla commodo elit eiusmod. Id ex ex deserunt ipsum ea id Lorem id ea elit. Magna duis commodo deserunt do. Minim duis ipsum dolore reprehenderit reprehenderit reprehenderit duis. Sit velit magna velit est do aliquip nostrud ipsum ipsum laboris aute.'
       }

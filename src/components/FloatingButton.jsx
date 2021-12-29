@@ -2,30 +2,43 @@ import React from "react";
 import {View, Text, StyleSheet, TouchableWithoutFeedback, Animated} from "react-native";
 import {AntDesign, Entypo} from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import Button from "./Button";
+import { IconButton } from "react-native-paper";
+import { theme } from '../core/theme'
 
 
-export default function FloatingButton () {
+
+export default function FloatingButton ({navigation}) {
     
 
-   
+    const onButtonPress = () => {navigation.navigate('CreateIdeaScreen')}
+
     return (
-        <View style={styles.container}>
-           <TouchableOpacity
+        <View>
+           <TouchableOpacity onPress={onButtonPress}    
     style={{
       borderWidth: 1,
-      borderColor: 'rgba(0,0,0,0.2)',
+      borderColor: 'black',
+      backgroundColor:'#ffe404',
       alignItems: 'center',
       justifyContent: 'center',
       width: 70,
       position: 'absolute',
-      bottom: 10,
-      right: 10,
+      bottom:0,
+      left:280,
+      top:650,
       height: 70,
-      backgroundColor: '#fff',
       borderRadius: 100,
+      zIndex:1
     }}
   >
-    <Button> + </Button>
+        <Button >
+        <Text style={{color: 'black', fontSize:24}}>
+            +
+            </Text>
+        </Button>
+        
+
   </TouchableOpacity>
         </View>
     );

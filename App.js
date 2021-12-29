@@ -9,7 +9,8 @@ import {
   ResetPasswordScreen,
   IdeasFeedScreen,
   ReviewScreen,
-  ViewComments
+  ViewComments,
+  CreateIdeaScreen
 } from './src/screens'
 
 const Stack = createStackNavigator()
@@ -31,6 +32,8 @@ export default function App() {
           <Stack.Screen name="IdeasFeedScreen" component={ IdeasFeedScreen }/>
           <Stack.Screen name="ReviewScreen" component={ ReviewScreen }/>
           <Stack.Screen name="ViewComments" component={ ViewComments }/>
+          <Stack.Screen name="CreateIdeaScreen" component={ CreateIdeaScreen }/>
+
 
           
 
